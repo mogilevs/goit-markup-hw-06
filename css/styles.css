@@ -440,6 +440,25 @@ input {
 .soc-net-icon-bg:focus {
   background-color: #404bbf;
 }
+.sec-four-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.sec-four-card {
+  width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sec-four-card:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.sec-four-card:hover .overlay-text {
+  transform: translateY(0);
+}
 */
 
 /* ------ end media -------*/
@@ -456,28 +475,21 @@ input {
 }
 .sec-four-list {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
-  flex-direction: row;
-  column-gap: 24px;
-  row-gap: 48px;
+  flex-direction: column;
+  column-gap: 48px;
 }
 .sec-four-card {
-  width: calc((100% - 48px) / 3);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  margin: 0 auto;
 }
-.sec-four-card:hover {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
+
 .box {
   position: relative;
   overflow: hidden;
 }
-.sec-four-card:hover .overlay-text {
-  transform: translateY(0);
-}
+
 .overlay-text {
   font-weight: 400;
   color: #f4f4fd;
@@ -492,6 +504,9 @@ input {
   padding: 40px 32px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.sec-four-img {
+  margin: 0 auto;
 }
 .sec-four-card-card {
   border-bottom: 1px solid #e7e9fc;
