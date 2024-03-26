@@ -37,12 +37,13 @@ input {
 }
 
 .container {
-  width: 320px;
+  max-width: 767px;
   padding: 16px;
   margin-left: auto;
   margin-right: auto;
 }
 .header {
+  max-width: 767px;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -109,6 +110,7 @@ input {
 .section {
   padding-top: 96px;
   padding-bottom: 96px;
+  max-width: 767px;
 }
 .hero {
   background-image: linear-gradient(
@@ -119,9 +121,9 @@ input {
   background-size: cover;
   padding-top: 72px;
   padding-bottom: 72px;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: auto;
-  min-width: 320px;
+  max-width: 767px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -326,6 +328,8 @@ input {
 }
 .sec-four-img {
   margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
 .sec-four-card-card {
   border-bottom: 1px solid #e7e9fc;
@@ -346,6 +350,9 @@ input {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+.footer {
+  max-width: 767px;
 }
 .footer-container {
   display: flex;
