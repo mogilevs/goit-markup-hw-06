@@ -121,9 +121,9 @@ input {
   background-size: cover;
   padding-top: 72px;
   padding-bottom: 72px;
-  margin-left: 0;
+  margin-left: auto;
   margin-right: auto;
-  max-width: 767px;
+  max-width: 320px;
   background-repeat: no-repeat;
   background-position: center;
 }
