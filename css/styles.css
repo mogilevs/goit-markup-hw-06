@@ -496,14 +496,18 @@ input {
   height: 100vh;
   z-index: 999;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
-  opacity: 0;
+  /*opacity: 0;
   pointer-events: none;
-  visibility: hidden;
+  visibility: hidden;*/
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -595,12 +599,9 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*opacity: 0;
+  opacity: 0;
   pointer-events: none;
-  visibility: hidden;*/
-  opacity: 1;
-  pointer-events: auto;
-  visibility: visible;
+  visibility: hidden;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
