@@ -39,11 +39,9 @@ input {
 .container {
   max-width: 767px;
   padding: 16px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 .header {
-  max-width: 767px;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -113,7 +111,6 @@ input {
 .section {
   padding-top: 96px;
   padding-bottom: 96px;
-  max-width: 767px;
 }
 .hero {
   background-image: linear-gradient(
@@ -363,17 +360,16 @@ input {
   color: #434455;
 }
 .footer {
-  max-width: 767px;
+  background-color: #2e2f42;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .footer-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: #2e2f42;
   flex-direction: column;
   gap: 72px;
-  padding-top: 96px;
-  padding-bottom: 96px;
 }
 .footer-logo-container {
   display: flex;
@@ -795,17 +791,8 @@ input {
   .mobile-menu {
     display: none;
   }
-  .header,
-  .footer,
-  .section {
-    max-width: 1157;
-  }
   .container {
     max-width: 1157px;
-    padding: 0 15px 0;
-  }
-  .header-container {
-    justify-content: flex-start;
   }
   .logo {
     margin-right: 120px;
@@ -877,14 +864,9 @@ input {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/tabl-Dark-bg@1x-min.jpg);
-    background-size: cover;
     padding-top: 112px;
     padding-bottom: 112px;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 768px;
-    background-repeat: no-repeat;
-    background-position: center;
   }
   .title {
     font-size: 56px;
@@ -1004,6 +986,8 @@ input {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+  /*-----------TABLET MODAL------------------*/
+
   .modal-box {
     width: 408px;
     min-height: 584px;
@@ -1044,11 +1028,7 @@ input {
   .mobile-menu {
     display: none;
   }
-  .header,
-  .footer,
-  .section {
-    max-width: none;
-  }
+
   .container {
     max-width: 1158px;
     padding: 0 15px 0;
@@ -1134,14 +1114,9 @@ input {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office1.jpg);
-    background-size: cover;
     padding-top: 188px;
     padding-bottom: 188px;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 1440px;
-    background-repeat: no-repeat;
-    background-position: center;
   }
   .title {
     font-size: 56px;
@@ -1330,9 +1305,9 @@ input {
 
 /*------------2X TABLET BACKGROUND-------------------*/
 
-@media (min-device-pixel-ratio: 2),
+@media (max-width: 1157px) and (min-width: 768px) and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
-  (min-resolution: 2dppx) and (max-width: 1157px) and (min-width: 768px) {
+  (min-resolution: 2dppx) {
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -1342,9 +1317,9 @@ input {
 
 /*------------2X DESKTOP BACKGROUND-------------------*/
 
-@media (min-device-pixel-ratio: 2),
+@media (min-width: 1158px) and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
-  (min-resolution: 2dppx) and (min-width: 1188px) {
+  (min-resolution: 2dppx) {
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
