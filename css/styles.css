@@ -790,7 +790,7 @@ input {
 
 /*------------------TABLET--------------*/
 
-@media (max-width: 1157px) and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1157px) {
   .mobile-menu {
     display: none;
   }
@@ -976,7 +976,7 @@ input {
     align-items: start;
   }
   .subscribe-title {
-    align-self: left;
+    align-self: start;
   }
   .subscribe-form {
     flex-direction: row;
@@ -1256,7 +1256,7 @@ input {
     align-items: start;
   }
   .subscribe-title {
-    align-self: left;
+    align-self: start;
   }
   .subscribe-form {
     flex-direction: row;
