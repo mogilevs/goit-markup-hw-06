@@ -38,13 +38,16 @@ input {
 
 .container {
   max-width: 767px;
-  padding: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 .header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 .header-container {
   display: flex;
@@ -146,7 +149,7 @@ input {
   color: #ffffff;
   background-color: inherit;
   letter-spacing: 0.02em;
-  min-width: 216px;
+  width: 216px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 72px;
@@ -221,6 +224,9 @@ input {
 .sec-three {
   background-color: #f4f4fd;
 }
+.sec-three-container {
+  width: 296px;
+}
 .sec-three-title {
   font-size: 36px;
   font-weight: 700;
@@ -246,9 +252,7 @@ input {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
-.sec-three-picture {
-  margin: 0 auto;
-}
+
 .sec-three-card-card {
   padding: 32px 0;
 }
@@ -309,7 +313,7 @@ input {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  column-gap: 48px;
+  row-gap: 48px;
 }
 .sec-four-card {
   width: 100%;
@@ -497,7 +501,6 @@ input {
   z-index: 999;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
   opacity: 1;
   pointer-events: auto;
@@ -505,6 +508,7 @@ input {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -582,6 +586,11 @@ input {
   align-items: center;
   gap: 40px;
   margin-left: 0;
+}
+.mob-footer-container {
+  position: absolute;
+  bottom: 40px;
+  left: 16px;
 }
 /* ------------- MODAL OVERLAY------------*/
 
@@ -794,9 +803,13 @@ input {
   .mobile-menu {
     display: none;
   }
+  .sec-three-container {
+    width: 584px;
+  }
   .container {
     max-width: 1157px;
   }
+
   .logo {
     margin-right: 120px;
   }
@@ -902,12 +915,18 @@ input {
   .sec-two-card {
     width: calc((100% - 24px) / 2);
   }
+  .sec-two-list-title {
+    text-align: left;
+  }
   .sec-three-list {
     justify-content: flex-start;
     flex-direction: row;
     row-gap: 64px;
     column-gap: 24px;
     flex-wrap: wrap;
+  }
+  .sec-three-picture {
+    margin: 0 auto;
   }
   .sec-three-card {
     width: calc((100% - 24px) / 2);
@@ -938,7 +957,6 @@ input {
     background-color: #2e2f42;
     padding-top: 96px;
     padding-bottom: 96px;
-    padding-left: 108px;
   }
   .footer-logo-container {
     margin-right: 24px;
@@ -949,6 +967,7 @@ input {
     justify-content: flex-start;
     flex-wrap: wrap;
     column-gap: 0;
+    width: 584px;
   }
 
   .footer-logo {
@@ -1042,7 +1061,9 @@ input {
   .mobile-menu {
     display: none;
   }
-
+  .sec-three-container {
+    width: auto;
+  }
   .container {
     max-width: 1158px;
     padding: 0 15px 0;
@@ -1186,7 +1207,9 @@ input {
   .sec-three-card {
     width: calc((100% - 72px) / 4);
   }
-
+  .sec-three-picture {
+    margin: 0 auto;
+  }
   .soc-net-icon-bg {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -1226,6 +1249,7 @@ input {
     flex-direction: row;
     justify-content: flex-start;
     gap: 0;
+    width: auto;
   }
 
   .footer-logo {
